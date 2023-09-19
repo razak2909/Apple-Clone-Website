@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Oswald:wght@700&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo img {
+    height: 20px;
+}
+
+.navbar .nav-icons img {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: fixed;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-weight: 100;
+}
+
+.navbar ul li {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.offers{
+    text-align: center;
+    padding: 30px;
+    padding-bottom:10px ;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+.offers a{
+    color: blue;
+}
+
+.back-video video {
+   width: 100%;
+}
+
+
+.services img{
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.services a{
+    color: blue;
+}
+
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.072);
+    margin-top: 30px;
+}
+
+.titles h1{
+    font-size: 40px;
+}
+
+.products{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.072);
+}
+
+
+.product img{
+    height: 90px;
+}
+
+.product a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.card img{
+    height:220px ;
+}
+
+.card-container{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.card{
+    height: 470px;
+    width: 370px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: 0.7s;
+}
+
+.card h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card p{
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.event-pictures img{
+    height: 400px;
+}
+
+.event-pictures{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apple-events{
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.apple-events h1{
+    margin-bottom:30px ;
+    text-align: center;
+}
+
+.section-3 img{
+    height: 700px;
+}
+
+.section-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-3 h1{
+    font-size: 40px;
+}
+
+.store{
+    display: flex;
+}
+
+.store img{
+    height: 22px;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-list ul{
+    list-style-type: none;
+}
+
+.store{
+    margin-left: 5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-items{
+    margin-top:30px;
+    background-color: rgba(0, 0, 0, 0.072);
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer{
+    padding: 20px;
+}
+
+.cross{
+    display:none ;
+}
+
+.menuopen{
+    display: none;
+}
+
+.back-video video {
+    width: 100%;
+    height: auto; /* Maintain video aspect ratio */
+ }
+ 
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+        position: absolute;
+        background-color: white;
+        opacity: 0%;
+        transition: 0.6s;
+    }
+    
+    .navbar ul li{
+        padding-top: 30px;
+    }
+
+    .menuopen{
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        height: 25px;
+    }
+
+    .cross{
+        display: block;
+        position: absolute;
+        right: 4%;
+        height: 25px; 
+    }
+
+ 
+   
+    .offers p{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .offers a{
+        font-size: 13px;
+    }
+
+    .back-video video {
+        height: auto; /* Reset height for smaller screens */
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .titles h1{
+         font-size: 15px;
+    }
+
+    .products {
+        flex-direction: column; /* Stack products vertically on smaller screens */
+        align-items: center; /* Center-align products */
+    }
+
+    .product {
+        margin-bottom: 20px; /* Add some spacing between products */
+    }
+
+    .product img {
+        height: 60px; /* Reduce the height of product images */
+    }
+
+    .product a {
+        font-size: 12px; /* Decrease font size for product links */
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apple-events{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-pictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-pictures img{
+        height: 350px;
+        width: 200px;
+    }
+
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-3 img{
+        height: 400px;
+    }
+
+    .section-3 h1{
+        font-size:25px ;
+        margin: 20px;
+    }
+
+    .menu-list ul{
+        font-size: 12px;
+        padding:10px
+    }
+}
